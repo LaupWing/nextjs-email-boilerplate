@@ -29,6 +29,7 @@ import { Label } from "./ui/label"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
 import { Separator } from "./ui/separator"
 import { Switch } from "./ui/switch"
+import { Textarea } from "./ui/textarea"
 
 interface MailDisplayProps {
     mail: Mail | null
