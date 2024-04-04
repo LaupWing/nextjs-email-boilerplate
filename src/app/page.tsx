@@ -1,4 +1,5 @@
 import { AccountSwitcher } from "@/components/account-switcher"
+import { MailList } from "@/components/mail-list"
 import { Nav } from "@/components/nav"
 import { Input } from "@/components/ui/input"
 import {
@@ -9,7 +10,7 @@ import {
 import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { TooltipProvider } from "@/components/ui/tooltip"
-import { accounts } from "@/data"
+import { accounts, mails } from "@/data"
 import { cn } from "@/lib/utils"
 import {
     Archive,
@@ -141,12 +142,12 @@ export default function Home() {
                             </form>
                         </div>
                         <TabsContent value="all" className="m-0">
-                            {/* <MailList items={mails} /> */}
+                            <MailList items={mails} />
                         </TabsContent>
                         <TabsContent value="unread" className="m-0">
-                            {/* <MailList
+                            <MailList
                                 items={mails.filter((item) => !item.read)}
-                            /> */}
+                            />
                         </TabsContent>
                     </Tabs>
                 </ResizablePanel>
