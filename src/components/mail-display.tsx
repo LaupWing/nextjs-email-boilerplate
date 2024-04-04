@@ -10,7 +10,6 @@ import {
     Trash2,
 } from "lucide-react"
 
-import { Textarea } from "@/registry/new-york/ui/textarea"
 import {
     Tooltip,
     TooltipContent,
