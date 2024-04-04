@@ -1,5 +1,6 @@
 "use client"
 import { AccountSwitcher } from "@/components/account-switcher"
+import { MailDisplay } from "@/components/mail-display"
 import { MailList } from "@/components/mail-list"
 import { Nav } from "@/components/nav"
 import { Input } from "@/components/ui/input"
@@ -13,6 +14,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { accounts, mails } from "@/data"
 import { cn } from "@/lib/utils"
+import { useMail } from "@/use-mail"
 import {
     Archive,
     ArchiveX,
@@ -27,7 +29,9 @@ import { useState } from "react"
 export default function Home() {
     const [isCollapsed, setIsCollapsed] = useState(false)
     const defaultLayout = [265, 440, 655]
+    const [mail] = useMail()
     const navCollapsedSize = 4
+
     return (
         <TooltipProvider delayDuration={0}>
             <ResizablePanelGroup
@@ -154,12 +158,12 @@ export default function Home() {
                 </ResizablePanel>
                 <ResizableHandle withHandle />
                 <ResizablePanel defaultSize={defaultLayout[2]}>
-                    {/* <MailDisplay
+                    <MailDisplay
                         mail={
                             mails.find((item) => item.id === mail.selected) ||
                             null
                         }
-                    /> */}
+                    />
                 </ResizablePanel>
             </ResizablePanelGroup>
         </TooltipProvider>
