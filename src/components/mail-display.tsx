@@ -12,10 +12,6 @@ import {
 
 import { Button } from "@/registry/new-york/ui/button"
 import { Calendar } from "@/registry/new-york/ui/calendar"
-import {
-    DropdownMenu,
-    DropdownMenuTrigger,
-} from "@/registry/new-york/ui/dropdown-menu"
 import { Label } from "@/registry/new-york/ui/label"
 import {
     Popover,
@@ -30,7 +26,12 @@ import {
     TooltipContent,
     TooltipTrigger,
 } from "@/registry/new-york/ui/tooltip"
-import { DropdownMenuContent, DropdownMenuItem } from "./ui/dropdown-menu"
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "./ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { Mail } from "@/data"
 
