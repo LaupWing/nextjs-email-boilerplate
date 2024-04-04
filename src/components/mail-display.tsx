@@ -25,6 +25,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
 import { Separator } from "./ui/separator"
 import { Switch } from "./ui/switch"
 import { Textarea } from "./ui/textarea"
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip"
 
 interface MailDisplayProps {
     mail: Mail | null
