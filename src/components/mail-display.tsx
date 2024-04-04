@@ -30,8 +30,9 @@ import {
     TooltipContent,
     TooltipTrigger,
 } from "@/registry/new-york/ui/tooltip"
-import { Mail } from "@/app/(app)/examples/mail/data"
 import { DropdownMenuContent, DropdownMenuItem } from "./ui/dropdown-menu"
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
+import { Mail } from "@/data"
 
 interface MailDisplayProps {
     mail: Mail | null
