@@ -1,3 +1,4 @@
+"use client"
 import { AccountSwitcher } from "@/components/account-switcher"
 import { MailList } from "@/components/mail-list"
 import { Nav } from "@/components/nav"
@@ -150,6 +151,15 @@ export default function Home() {
                             />
                         </TabsContent>
                     </Tabs>
+                </ResizablePanel>
+                <ResizableHandle withHandle />
+                <ResizablePanel defaultSize={defaultLayout[2]}>
+                    {/* <MailDisplay
+                        mail={
+                            mails.find((item) => item.id === mail.selected) ||
+                            null
+                        }
+                    /> */}
                 </ResizablePanel>
             </ResizablePanelGroup>
         </TooltipProvider>
