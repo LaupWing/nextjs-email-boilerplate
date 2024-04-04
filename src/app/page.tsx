@@ -49,11 +49,17 @@ export default function Home() {
                     collapsible={true}
                     minSize={15}
                     maxSize={20}
+                    onExpand={() => {
+                        setIsCollapsed(false)
+                        document.cookie = `react-resizable-panels:collapsed=${JSON.stringify(
+                            false
+                        )}`
+                    }}
                     onCollapse={() => {
-                        // setIsCollapsed(collapsed)
-                        // document.cookie = `react-resizable-panels:collapsed=${JSON.stringify(
-                        //     collapsed
-                        // )}`
+                        setIsCollapsed(true)
+                        document.cookie = `react-resizable-panels:collapsed=${JSON.stringify(
+                            true
+                        )}`
                     }}
                     className={cn(
                         isCollapsed &&
