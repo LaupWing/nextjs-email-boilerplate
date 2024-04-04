@@ -11,11 +11,6 @@ import {
 } from "lucide-react"
 
 import {
-    Tooltip,
-    TooltipContent,
-    TooltipTrigger,
-} from "@/registry/new-york/ui/tooltip"
-import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
