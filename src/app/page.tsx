@@ -1,5 +1,7 @@
+import { AccountSwitcher } from "@/components/account-switcher"
 import { ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable"
 import { TooltipProvider } from "@/components/ui/tooltip"
+import { accounts } from "@/data"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
 
@@ -41,10 +43,10 @@ export default function Home() {
                             isCollapsed ? "h-[52px]" : "px-2"
                         )}
                     >
-                        {/* <AccountSwitcher
+                        <AccountSwitcher
                             isCollapsed={isCollapsed}
                             accounts={accounts}
-                        /> */}
+                        />
                     </div>
                 </ResizablePanel>
             </ResizablePanelGroup>
