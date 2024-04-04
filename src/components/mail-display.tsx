@@ -11,10 +11,6 @@ import {
 } from "lucide-react"
 
 import {
-    DropdownMenuContent,
-    DropdownMenuItem,
-} from "@/registry/default/ui/dropdown-menu"
-import {
     Avatar,
     AvatarFallback,
     AvatarImage,
@@ -40,6 +36,7 @@ import {
     TooltipTrigger,
 } from "@/registry/new-york/ui/tooltip"
 import { Mail } from "@/app/(app)/examples/mail/data"
+import { DropdownMenuContent, DropdownMenuItem } from "./ui/dropdown-menu"
 
 interface MailDisplayProps {
     mail: Mail | null
