@@ -10,7 +10,6 @@ import {
     Trash2,
 } from "lucide-react"
 
-import { Switch } from "@/registry/new-york/ui/switch"
 import { Textarea } from "@/registry/new-york/ui/textarea"
 import {
     Tooltip,
@@ -30,6 +29,7 @@ import { Calendar } from "./ui/calendar"
 import { Label } from "./ui/label"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
 import { Separator } from "./ui/separator"
+import { Switch } from "./ui/switch"
 
 interface MailDisplayProps {
     mail: Mail | null
