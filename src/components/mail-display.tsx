@@ -10,11 +10,6 @@ import {
     Trash2,
 } from "lucide-react"
 
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from "@/registry/new-york/ui/popover"
 import { Separator } from "@/registry/new-york/ui/separator"
 import { Switch } from "@/registry/new-york/ui/switch"
 import { Textarea } from "@/registry/new-york/ui/textarea"
@@ -34,6 +29,7 @@ import { Mail } from "@/data"
 import { Button } from "./ui/button"
 import { Calendar } from "./ui/calendar"
 import { Label } from "./ui/label"
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
 
 interface MailDisplayProps {
     mail: Mail | null
