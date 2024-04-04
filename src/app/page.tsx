@@ -1,5 +1,6 @@
 import { AccountSwitcher } from "@/components/account-switcher"
 import { ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable"
+import { Separator } from "@/components/ui/separator"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { accounts } from "@/data"
 import { cn } from "@/lib/utils"
@@ -48,6 +49,7 @@ export default function Home() {
                             accounts={accounts}
                         />
                     </div>
+                    <Separator />
                 </ResizablePanel>
             </ResizablePanelGroup>
         </TooltipProvider>
