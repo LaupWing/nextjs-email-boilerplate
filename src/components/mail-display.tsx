@@ -10,7 +10,6 @@ import {
     Trash2,
 } from "lucide-react"
 
-import { Calendar } from "@/registry/new-york/ui/calendar"
 import { Label } from "@/registry/new-york/ui/label"
 import {
     Popover,
@@ -34,6 +33,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { Mail } from "@/data"
 import { Button } from "./ui/button"
+import { Calendar } from "./ui/calendar"
 
 interface MailDisplayProps {
     mail: Mail | null
