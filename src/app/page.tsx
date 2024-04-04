@@ -6,10 +6,19 @@ import {
     ResizablePanelGroup,
 } from "@/components/ui/resizable"
 import { Separator } from "@/components/ui/separator"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { accounts } from "@/data"
 import { cn } from "@/lib/utils"
-import { Archive, ArchiveX, File, Inbox, Send, Trash2 } from "lucide-react"
+import {
+    Archive,
+    ArchiveX,
+    File,
+    Inbox,
+    Search,
+    Send,
+    Trash2,
+} from "lucide-react"
 import { useState } from "react"
 
 export default function Home() {
