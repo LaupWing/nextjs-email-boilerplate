@@ -1,9 +1,11 @@
 import { AccountSwitcher } from "@/components/account-switcher"
+import { Nav } from "@/components/nav"
 import { ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable"
 import { Separator } from "@/components/ui/separator"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { accounts } from "@/data"
 import { cn } from "@/lib/utils"
+import { Archive, ArchiveX, File, Inbox, Send, Trash2 } from "lucide-react"
 import { useState } from "react"
 
 export default function Home() {
@@ -50,6 +52,47 @@ export default function Home() {
                         />
                     </div>
                     <Separator />
+                    <Nav
+                        isCollapsed={isCollapsed}
+                        links={[
+                            {
+                                title: "Inbox",
+                                label: "128",
+                                icon: Inbox,
+                                variant: "default",
+                            },
+                            {
+                                title: "Drafts",
+                                label: "9",
+                                icon: File,
+                                variant: "ghost",
+                            },
+                            {
+                                title: "Sent",
+                                label: "",
+                                icon: Send,
+                                variant: "ghost",
+                            },
+                            {
+                                title: "Junk",
+                                label: "23",
+                                icon: ArchiveX,
+                                variant: "ghost",
+                            },
+                            {
+                                title: "Trash",
+                                label: "",
+                                icon: Trash2,
+                                variant: "ghost",
+                            },
+                            {
+                                title: "Archive",
+                                label: "",
+                                icon: Archive,
+                                variant: "ghost",
+                            },
+                        ]}
+                    />
                 </ResizablePanel>
             </ResizablePanelGroup>
         </TooltipProvider>
