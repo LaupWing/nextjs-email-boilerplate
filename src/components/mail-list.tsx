@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { Mail } from "@/data"
 import { useMail } from "@/use-mail"
 import { ScrollArea } from "./ui/scroll-area"
+import { Badge } from "./ui/badge"
 
 interface MailListProps {
     items: Mail[]
