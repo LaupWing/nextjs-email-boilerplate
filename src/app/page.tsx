@@ -1,6 +1,10 @@
 import { AccountSwitcher } from "@/components/account-switcher"
 import { Nav } from "@/components/nav"
-import { ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable"
+import {
+    ResizableHandle,
+    ResizablePanel,
+    ResizablePanelGroup,
+} from "@/components/ui/resizable"
 import { Separator } from "@/components/ui/separator"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { accounts } from "@/data"
@@ -94,6 +98,11 @@ export default function Home() {
                         ]}
                     />
                 </ResizablePanel>
+                <ResizableHandle withHandle />
+                <ResizablePanel
+                    defaultSize={defaultLayout[1]}
+                    minSize={30}
+                ></ResizablePanel>
             </ResizablePanelGroup>
         </TooltipProvider>
     )
