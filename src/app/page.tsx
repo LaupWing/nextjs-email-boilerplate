@@ -28,7 +28,7 @@ import { useState } from "react"
 
 export default function Home() {
     const [isCollapsed, setIsCollapsed] = useState(false)
-    const defaultLayout = [265, 440, 655]
+    const defaultLayout = [20, 30, 50]
     const [mail] = useMail()
     const navCollapsedSize = 4
 
